@@ -1,5 +1,6 @@
 import 'package:cours_flutter_animation/clicker_page.dart';
 import 'package:cours_flutter_animation/column_page.dart';
+import 'package:cours_flutter_animation/sdk_page.dart';
 import 'package:cours_flutter_animation/swap_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -20,7 +21,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const ClickerPage(),
+      home: const SdkPage(),
+      // home: const ClickerPage(),
       // home: const ColumnPage(),
       // home: const SwapPage(),
     );
