@@ -20,8 +20,9 @@ class ColumnPage extends StatelessWidget {
             const Text("Texte C"),
             const Text("Texte D"),
             const Text("Texte E"),
-          ].animate(interval: 500.ms).fade(duration: 1.seconds),
-          // .animate(interval: 500.ms).slideX(begin: -5),
+          ].animate(interval: 100.ms).fade(duration: 1.seconds),
+          // .animate(interval: 500.ms)
+          // .slideX(begin: -5),
           // Ici on crée une animation qui va s'appliquer à tous les enfants.
           // On utilise interval pour que cela se fasse les uns après les autres
         ),

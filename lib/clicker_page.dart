@@ -31,7 +31,9 @@ class _ClickerPageState extends State<ClickerPage> {
             const Text(
               'You have pushed the button this many times:',
             )
-                .animate()
+                .animate(
+                  onPlay: (controller) => controller.repeat(reverse: true),
+                )
                 .slideX(
                   delay: 500.ms,
                   begin: -1.2,
@@ -45,6 +47,11 @@ class _ClickerPageState extends State<ClickerPage> {
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
+            ).animate().fade(duration: 1500.ms),
+
+            Text(
+              "Hello world",
+              style: TextStyle(fontSize: 30),
             ).animate().fade(),
 
             // Pour une gestion encore plus poussée on peut utiliser un controller.
@@ -59,7 +66,7 @@ class _ClickerPageState extends State<ClickerPage> {
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             )
                 .animate(
-                  onPlay: (controller) => controller.repeat(),
+                  onPlay: (controller) => controller.repeat(reverse: true),
                   // onPlay: (controller) => controller.repeat(reverse: true),
                 )
                 .tint(

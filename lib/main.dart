@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
+      // --------- Décommenter les pages pour voir les différents exemples
       home: const SdkPage(),
       // home: const ClickerPage(),
       // home: const ColumnPage(),
